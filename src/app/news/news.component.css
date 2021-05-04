@@ -19,3 +19,23 @@
   background-color: #0c0505;
   color: #f8f8f8;
 }
+@media (max-width: 1210px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .wrapper ng-repeat {
+    max-width: 100%;
+  }
+}
+@media (min-width: 760px) {
+  .content {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+  }
+}
+@media (max-width: 760px) {
+  .wrapper img {
+    max-width: 300px;
+    margin: 0;
+  }
+}

@@ -24,3 +24,28 @@
   background-color: rgb(12, 5, 5);
   color: rgb(248, 248, 248);
 }
+
+@media (max-width: 1210px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    ng-repeat {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (min-width: 760px) {
+  .content {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    img {
+      max-width: 300px;
+      margin: 0;
+    }
+  }
+}
