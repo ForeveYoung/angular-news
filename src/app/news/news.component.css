@@ -1,0 +1,19 @@
+.wrapper {
+  margin: 10px 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.wrapper ng-repeat {
+  max-width: 600px;
+}
+.wrapper .content {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+}
+.wrapper .title {
+  margin: 30px 0px 10px 0px;
+}
+.wrapper img {
+  max-width: 400px;
+  margin-top: 10px;
+}

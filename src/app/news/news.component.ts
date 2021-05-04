@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NewsDataService } from '../news-data.service';
 
 @Component({
@@ -6,20 +6,17 @@ import { NewsDataService } from '../news-data.service';
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.less']
 })
-export class NewsComponent {
+export class NewsComponent implements OnInit {
 
   constructor(private httpp:NewsDataService) { }
   data:any;
   imgSrc:any;
 
-  getNews(){
+  ngOnInit(){
     return this.httpp.getData().subscribe(
       data => {
         this.data = data.articles;
-        console.log(data)
       }
-
-      
     )
   }
 

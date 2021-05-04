@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Itim';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/itim/v5/0nknC9ziJOYewAQ.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Itim", cursive;
+}
