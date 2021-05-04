@@ -1,0 +1,8 @@
+<p>news works!</p>
+<button (click)='getNews()'>click</button>
+<ng-repeat *ngFor="let item of data">
+    <h3>{{item?.title}}</h3>
+    <img src={{item.image}}>
+    {{item?.description}}
+    <hr>
+</ng-repeat>
