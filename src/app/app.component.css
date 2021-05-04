@@ -3,3 +3,18 @@ header {
   padding: 20px 50px;
   font-size: 30px;
 }
+header span {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  display: block;
+  float: right;
+  font-size: 15px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.darkTitle {
+  background: #500303;
+  color: white;
+}

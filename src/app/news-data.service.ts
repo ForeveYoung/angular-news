@@ -10,7 +10,7 @@ export class NewsDataService {
   constructor(private http:HttpClient) { }
 
   getData():Observable<any>{
-    return this.http.get('https://gnews.io/api/v4/search?q=example&token=073688608d89c6bbad19144d2198a712')
+    return this.http.get('https://gnews.io/api/v4/search?q=example&token=1d9437483745e5176562c6d2cdeceaf7')
 
   }
 }

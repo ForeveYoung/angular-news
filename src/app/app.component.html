@@ -1,4 +1,5 @@
-<header>
+<header [ngClass]="{darkTitle: checkMode}">
     Last News
+    <span (click)="changeMode()" [ngClass]="{darkTitle: checkMode}" >{{modeName}} <br> Mode</span>
 </header>
-<app-news></app-news>
+<app-news [checkM]='checkMode'></app-news>

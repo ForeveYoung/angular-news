@@ -12,7 +12,7 @@ import { NewsComponent } from './news/news.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NewsDataService } from '../news-data.service';
 
 @Component({
@@ -9,6 +9,8 @@ import { NewsDataService } from '../news-data.service';
 export class NewsComponent implements OnInit {
 
   constructor(private httpp:NewsDataService) { }
+
+  @Input() checkM: boolean;
   data:any;
   imgSrc:any;
 

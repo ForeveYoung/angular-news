@@ -1,9 +1,11 @@
-<div class="wrapper">
-    <ng-repeat *ngFor="let item of data">
-        <h2 class="title">{{item?.title}}</h2>
-        <div class="content">
-            <img src={{item.image}}>
-            <p class="description">{{item?.description}}</p>
-        </div>
-    </ng-repeat>
+<div [ngClass]="{dark: checkM}"> 
+    <div class="wrapper" [ngClass]="{dark: checkM}">
+        <ng-repeat *ngFor="let item of data">
+            <h2 class="title">{{item?.title}}</h2>
+            <div class="content">
+                <img src={{item.image}}>
+                <p class="description">{{item?.description}}</p>
+            </div>
+        </ng-repeat>
+    </div>
 </div>
