@@ -16,10 +16,5 @@ export class AppComponent {
     } else {
       this.modeName = 'Night'
     }
-
-    console.log( this.checkMode);
-    
-    
   }
-  
 }

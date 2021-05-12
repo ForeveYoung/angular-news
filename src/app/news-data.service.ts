@@ -11,6 +11,5 @@ export class NewsDataService {
 
   getData():Observable<any>{
     return this.http.get('https://gnews.io/api/v4/search?q=example&token=1cb4013126aae4762c5ac1419da40a8d')
-
   }
 }
